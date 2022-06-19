@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import sys
 from simple_colors import *
 
@@ -18,7 +19,7 @@ def convert(words):
             midpoint = (size+1) / 2
         bolded = i[0:int(midpoint)]
         others = i[int(midpoint):size]
-        print(green(bolded,['bold'])+green(others),end=" ")
+        print(bolded+others,end=" ")
     print("")
 
 f = open("example.txt","r")
