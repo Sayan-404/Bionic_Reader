@@ -11,7 +11,7 @@
       <input type="submit" name="" value="Submit">
     </form>
     <br>
-    <form action="upload.php" method="post">
+    <form action="bionic.php" method="post" name="upload">
       <input type="file" name="upload_file" value="Upload">
       <input type="submit" name="" value="Upload">
     </form>

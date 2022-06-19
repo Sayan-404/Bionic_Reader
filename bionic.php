@@ -1,4 +1,14 @@
 <?php
+
+
+ if($_POST["upload"])
+ {
+   $command = escapeshellcmd('python3 /usr/custom/test.py');
+   $output = shell_exec($command);
+   echo $output;
+ }
+  else
+  {
  $string = $_POST["input_values"];
  $token = strtok($string, " ");
  while($token !== false)
@@ -17,5 +27,6 @@
    $token = strtok(" ");
 
  }
+}
 
 ?>
