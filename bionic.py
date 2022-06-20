@@ -1,8 +1,6 @@
-#!/usr/bin/env python
-import sys
-from simple_colors import *
+import pdfkit
 
-
+pdfkit.from_file('test.html', 'out.pdf')
 
 def convert(words):
 
@@ -19,8 +17,7 @@ def convert(words):
             midpoint = (size+1) / 2
         bolded = i[0:int(midpoint)]
         others = i[int(midpoint):size]
-        print(bolded+others,end=" ")
-    print("")
+
 
 f = open("example.txt","r")
 for line in f:
